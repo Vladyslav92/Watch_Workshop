@@ -4,10 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 
-# To run the application, in the terminal we need to first activate the virtual environment
-# using the command .\venv\Scripts\activate. Then, after (venv) we see in the terminal,
-# write the (python app.py) command to run the application from the virtual environment.
-# To stop the server, press Ctrl + C.
 
 load_dotenv('config.txt')
 app = Flask(__name__)

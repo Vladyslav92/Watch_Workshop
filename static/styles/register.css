@@ -1,4 +1,3 @@
-/* Общие стили для body и html */
 body {
   background-image: url("../images/watch_background2.jpg");
 }
@@ -16,7 +15,6 @@ html {
   background-position: center;
 }
 
-/* Стиль для общего контейнера */
 .background {
   display: flex;
   flex-direction: column;
@@ -26,12 +24,11 @@ html {
   height: 100%;
 }
 
-/* Стиль для хедера */
 .header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   position: absolute;
   top: 0;
@@ -84,24 +81,21 @@ html {
   text-decoration: none;
 }
 
-/* Контейнер формы */
 .form-container {
-  background-color: rgba(51, 51, 51, 0.85); /* Темный полупрозрачный фон */
+  background-color: rgba(51, 51, 51, 0.85);
   padding: 30px;
   padding-right: 50px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 80px; /* Отступ сверху для размещения ниже хедера */
+  margin-top: 80px;
 }
 
-/* Заголовок формы */
 .form-container h1 {
   color: #fff;
   margin-bottom: 20px;
 }
 
-/* Стили для меток и полей ввода */
 .form-container label {
   color: #fff;
   display: block;
@@ -117,9 +111,8 @@ html {
   font-size: 16px;
 }
 
-/* Кнопка отправки */
 .form-container button {
-  background-color: #232323; /* Темный цвет кнопки */
+  background-color: #232323;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -129,5 +122,5 @@ html {
 }
 
 .form-container button:hover {
-  background-color: #767676; /* Более светлый оттенок при наведении */
+  background-color: #767676;
 }
