@@ -144,6 +144,13 @@ button:hover {
   z-index: 7; /* Высокий z-index, чтобы окно отображалось поверх других элементов */
 }
 
+.center-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 #closeButton {
   margin-left: 45%;
   background-color: #1e1d1d; /* Красный фон */
