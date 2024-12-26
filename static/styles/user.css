@@ -1,0 +1,105 @@
+/* Общие стили для body и html */
+body {
+  background-image: url("../images/watch_background2.jpg");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Стиль для общего контейнера */
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Стиль для хедера */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.first_block {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-info {
+  display: flex;
+  align-items: center;
+}
+
+.logo-info img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-info p {
+  line-height: 1.2;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.nav li {
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Контейнер пользователя */
+.user-container {
+  background-color: rgba(51, 51, 51, 0.85); /* Темный полупрозрачный фон */
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 80px; /* Отступ сверху для размещения ниже хедера */
+  width: 80%;
+}
+
+.user-container h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.user-container p {
+  color: #ddd;
+}

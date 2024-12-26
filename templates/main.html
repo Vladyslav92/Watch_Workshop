@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/main.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <title>Watch Workshop</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="{{ url_for('static', filename='images/watch_background.png') }}"
+        alt="image"
+        class="background_image"
+      />
+      <div class="header_blocks">
+        <div class="first_block">
+          <div class="logo-info">
+            <img
+              src="{{ url_for('static', filename='images/logo_top.png') }}"
+              alt="logo"
+            />
+            <div class="name-container">
+              <p>Dmitriy</p>
+              <p>Kotov</p>
+            </div>
+          </div>
+          <ul class="nav">
+            <li><a href="#black">About the Watch</a></li>
+            <li><a href="#table-title">For Dealers</a></li>
+            <li>
+              <a href="{{ url_for('news') }}">News</a>
+            </li>
+            <li>
+              <a href="{{ url_for('login') }}">Login</a>
+            </li>
+            <li>
+              <a href="{{ url_for('register') }}">Register</a>
+            </li>
+            <li><a href="#contact-container">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="header-info">
+          <div class="name-background">
+            <p>Dmitriy</p>
+            <p>Kotov</p>
+          </div>
+          <div class="content">
+            <div class="content-name">
+              <p>Dmitry Kotov's</p>
+              <p>Watch Atelier</p>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/silver_watch.png') }}"
+              alt="silver watch"
+            />
+          </div>
+          <button id="openButton">
+            <img
+              src="{{ url_for('static', filename='images/button.png') }}"
+              alt="button"
+            />
+          </button>
+          <p class="button-text">Watch video presentation</p>
+        </div>
+      </div>
+    </header>
+    <div id="black" class="black">
+      <div class="rectangle"></div>
+      <img
+        src="{{ url_for('static', filename='images/watch2.jpg') }}"
+        alt="watch"
+      />
+      <img
+        src="{{ url_for('static', filename='images/watch1.jpg') }}"
+        alt="watch"
+      />
+      <div class="black-text-background">
+        <p>more about</p>
+        <p>The company</p>
+      </div>
+      <div class="black-text-title">
+        <p>More about</p>
+        <p>The company</p>
+      </div>
+      <div class="black-text">
+        <p>
+          Dmitry Kotov's watch studio has been operating in Kyiv since 2011.
+        </p>
+        <p>We produce steel watches under the D.Kotov brand. The production</p>
+        <p>
+          base is locatedon the territory of the Itkol Technopark on 1st
+          Frezernaya Street.
+        </p>
+        <p>The workshop is equipped with modern metalworking equipment</p>
+        <p>with numerical control, which allows for milling, turning,</p>
+        <p>
+          electrical erosion and laser processing, electrolyte-plasma polishing
+        </p>
+        <p>
+          of stainless steel and other technological operations. Our watches use
+        </p>
+        <p>Ukrainian and Japanese calibers.</p>
+      </div>
+    </div>
+    <div class="white">
+      <div class="white-text-background">
+        <p>Shop</p>
+        <p>Window rental</p>
+      </div>
+      <div class="white-text-title">
+        <p><b>Shop</b></p>
+        <p><b>Window rental</b></p>
+      </div>
+      <div class="white-text-page">
+        <p>We invite trade organizations that are ready to rent us</p>
+        <p>a showcase or a place in a showcase for a wristwatch.</p>
+      </div>
+      <div class="rectangle-grey"></div>
+      <img
+        src="{{ url_for('static', filename='images/vitrinu.png') }}"
+        alt="image"
+      />
+    </div>
+    <div class="black_second">
+      <div>
+        <span class="table-title-background">Stages of production</span>
+        <span id="table-title" class="table-title">Stages of production</span>
+      </div>
+      <table class="all-table">
+        <tr>
+          <p class="number1">01</p>
+          <td>
+            <img
+              src="{{ url_for('static', filename='images/watch_details2.png') }}"
+              alt="image"
+            />
+          </td>
+          <td>
+            <img
+              src="{{ url_for('static', filename='images/watch_details.png') }}"
+              alt="image"
+            />
+          </td>
+          <p class="number2">02</p>
+        </tr>
+        <tr>
+          <td>
+            <p>Dmitry Kotov's watch studio has been</p>
+            <p>operating in Ukraine since 2011. We</p>
+            <p>produce steel watches under the D.Kotov</p>
+            <p>brand. The production base is located</p>
+            <p>on the territory of the Itkol Technopark</p>
+            <p>on 1st Frezernaya Street.</p>
+          </td>
+          <td>
+            <p>Dmitry Kotov's watch studio has been operating</p>
+            <p>in Ukraine since 2011. We produce steel</p>
+            <p>watches under the D.Kotov brand. The production</p>
+            <p>base is located on the territory of the</p>
+            <p>Itkol Technopark on 1st Frezernaya Street.</p>
+          </td>
+        </tr>
+        <tr>
+          <p class="number3">03</p>
+          <td>
+            <img
+              src="{{ url_for('static', filename='images/watch_details3.png') }}"
+              alt="image"
+            />
+          </td>
+          <td>
+            <img
+              src="{{ url_for('static', filename='images/watch_details4.png') }}"
+              alt="image"
+            />
+          </td>
+          <p class="number4">04</p>
+        </tr>
+        <tr>
+          <td>
+            <p>Dmitry Kotov's watch studio has been operating</p>
+            <p>in Ukraine since 2011. We produce steel watches</p>
+            <p>under the D.Kotov brand. The production base is</p>
+            <p>located on the territory of the Itkol Technopark</p>
+            <p>on 1st Frezernaya Street.</p>
+          </td>
+          <td>
+            <p>Dmitry Kotov's watch studio has been operating</p>
+            <p>in Ukraine since 2011. We produce steel watches</p>
+            <p>under the D.Kotov brand. The production base is</p>
+            <p>located on the territory of the Itkol Technopark</p>
+            <p>on 1st Frezernaya Street.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="white_second">
+      <div class="rectangle-green2"></div>
+      <img
+        src="{{ url_for('static', filename='images/deal_picture.png') }}"
+        alt="image"
+      />
+    </div>
+    <div id="contact-container" class="contact-container">
+      <p class="info-title">Contact Info</p>
+      <img
+        class="phone-image"
+        src="{{ url_for('static', filename='images/phone.png') }}"
+        alt="image"
+      />
+      <p class="info-text-number">+35809543214</p>
+      <img
+        class="mail-image"
+        src="{{ url_for('static', filename='images/convert.png') }}"
+        alt="image"
+      />
+      <p class="info-text-mail">cotov@gmail.com</p>
+      <img
+        class="geolocation-image"
+        src="{{ url_for('static', filename='images/geolocation.png') }}"
+        alt="image"
+      />
+      <p class="info-text-address">1st Frezernaya Street, Kyiv city, Ukraine</p>
+    </div>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer-logo">
+          <img
+            src="{{ url_for('static', filename='images/logo_bottom.png') }}"
+            alt="Logo"
+          />
+          <div class="footer-logo-text">
+            <p>Dmitriy</p>
+            <p>Kotov</p>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="#"
+            ><img
+              src="{{ url_for('static', filename='images/convert.png') }}"
+              alt="Email icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="{{ url_for('static', filename='images/facebook.png') }}"
+              alt="Facebook icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="{{ url_for('static', filename='images/instagram.png') }}"
+              alt="Instagram icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <div id="popupWindow">
+      <video width="100%" controls>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/73a9S4fUgiQ"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        Your browser does not support the video tag.
+      </video>
+      <button id="closeButton">Close</button>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/window.js') }}"></script>
+  </body>
+</html>

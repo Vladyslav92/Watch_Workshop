@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Page</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/user.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <header class="header">
+        <div class="first_block">
+          <div class="logo-info">
+            <img
+              src="{{ url_for('static', filename='images/logo_top.png') }}"
+              alt="logo"
+            />
+            <div class="name-container">
+              <p>{{ username }}'s Page</p>
+            </div>
+          </div>
+          <ul class="nav">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="user-container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>This is your personal page.<br /><br />New features coming soon!</p>
+      </div>
+    </div>
+  </body>
+</html>

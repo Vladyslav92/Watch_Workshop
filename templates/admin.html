@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/admin.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <header class="header">
+        <div class="first_block">
+          <div class="logo-info">
+            <img
+              src="{{ url_for('static', filename='images/logo_top.png') }}"
+              alt="logo"
+            />
+            <div class="name-container">
+              <p>Admin Panel</p>
+            </div>
+          </div>
+          <ul class="nav">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="admin-container">
+        <h1>Admin Panel</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Password (hashed)</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for user in users %}
+            <tr>
+              <td>{{ user.id }}</td>
+              <td>{{ user.username }}</td>
+              <td>{{ user.email }}</td>
+              <td>{{ user.password[:15] }}...</td>
+              <!-- Отображение первых 15 символов -->
+              <td>
+                {% if user.username != 'Admin' %}
+                <form
+                  method="POST"
+                  action="{{ url_for('delete_user', user_id=user.id) }}"
+                >
+                  <button type="submit" class="delete-button">X</button>
+                </form>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
